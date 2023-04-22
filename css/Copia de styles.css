@@ -70,12 +70,9 @@ h6 {
     font-size: 16px;
     padding: 10px;
 }
-.menuHome li a:hover {
-        border-bottom: 2px solid azure;
-}
 
 .menu a:hover {
-    color: #210B2C;
+    color: #210B2C
 }
 
 .menuHome {
@@ -770,52 +767,4 @@ footer p {
     width: 60%;
     justify-content: center;
     align-items: center;
-}
-
-.encabezado {
-    background-color: #D8B4E2;
-}
-
-.sectionServicios {
-    background-color: #D8B4E2;
-}
-
-.serviciosDiv1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-.serviciosDiv2 {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-.sectionServicios3{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.serviciosMenuDiv{
-    display: flex;
-    align-items: center;
-}
-
-.serviciosLogoDiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footerServicios {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    justify-content: space-between;
-    align-content: center;
 }
