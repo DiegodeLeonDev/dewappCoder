@@ -1,0 +1,103 @@
+.contenedorTotal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.2fr 1fr 2fr 1fr 0.2fr;
+    grid-template-areas:
+        "header header header"
+        "encabezado encabezado encabezado"
+        "testimonio testimonio testimonio"
+        "testimonio2 testimonio2 testimonio2"
+        "footer footer footer";
+}
+
+.testimoniosHeader {
+    grid-area: header;
+    background-color: #D8B4E2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.encabezadosTestimonios {
+    grid-area: encabezado;
+    display: flex;
+    flex-direction: column;
+    background-color: #210B2C;
+    align-items: center;
+    justify-content: center;
+    h1 {
+        font-size: 42px;
+        color: white;
+    }
+    h2 {
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 00px;
+        color: white;
+    }
+}
+
+.mainTestimonios {
+    grid-area: testimonio;
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxTestimonios {
+    background-color: #D8B4E2;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid #210B2C;
+}
+
+.imagenTestimonios {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.testimoniosSecundarios {
+    grid-area: testimonio2;
+    display: flex;
+    grid-template-columns: repeat(4, 25%);
+    width: 100%;
+    margin-bottom: 25px;
+    justify-items: center;
+    gap: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    p {
+        color: white;
+        padding: 15px;
+    }
+}
+
+
+.testimoniosecundarioDiv {
+    width: 60%;
+    background-color: #210B2C;
+    border-radius: 15px;
+}
+
+.testimonioDiv {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-items: center;
+    align-items: center;
+    color: #210B2C;
+    div {
+        width: 50%;
+    }
+    img {
+        width: 80px;
+        height: 80px;
+        border-radius: 15px;
+    }
+}
+

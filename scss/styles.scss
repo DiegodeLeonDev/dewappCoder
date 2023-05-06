@@ -1,0 +1,560 @@
+@import "variables";
+@import "headers";
+@import "footers";
+@import "testimonios";
+@import "blog";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #210B2C;
+    text-align: center;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h5 {
+    font-family: 'Poppins', sans-serif;
+}
+
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.mainBackgroundHome {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #210B2C;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    p {
+        color: azure;
+    }
+    a {
+    color: #D8B4E2;
+    font-weight: 800;
+    font-size: 20px;
+    }
+}
+
+.mainDiv1 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: start;
+    margin-left: 150px;
+    p {
+        width: 50%;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+}
+
+#encabezadoHome {
+    color: azure;
+    font-size: 48px;
+}
+
+.imagenMain {
+    border-radius: 10%;
+    width: 60%;
+}
+
+.mainDiv2 {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainBlog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.testOverflow {
+    width: 50%;
+    background-color: #D8B4E2;
+    font-size: 16px;
+    height: 500px;
+    overflow: auto;
+    padding-bottom: 15px;
+    border: solid 2px #210B2C;
+    margin: 40px 15px 15px 15px;
+}
+
+.testOverflow2 {
+    width: 50%;
+    background-color: #D8B4E2;
+    font-size: 16px;
+    height: 250px;
+    overflow: auto;
+    padding-bottom: 15px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #210B2C;
+    margin: 15px;
+}
+
+.mainBackground {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #D8B4E2;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+}
+
+.mainContacto {
+    display: flex;
+    width: 100%;
+    background-color: #D8B4E2;
+    align-items: center;
+    height: 750px;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+
+.mainServicios {
+    display: flex;
+    width: 100%;
+    background-color: #D8B4E2;
+    align-items: center;
+    padding: 20px;
+    div {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+#mainServiciosImg {
+    border-radius: 10%;
+    width: 60%;
+}
+
+.mainContacto1 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.imagenContacto {
+    width: 100px;
+}
+
+.formContacto {
+    width: 40%;
+    text-align: center;
+    background-color: #210B2C;
+    color: white;
+    padding: 50px;
+    label {
+        display: flex;
+        flex-direction: column;
+    }
+    a {
+        color: $colorSecundario;
+    }
+}
+
+#imagenHome1 {
+    width: 80%;
+    padding: 20px;
+}
+
+.homeDiv3 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    p {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+#imagenHome2 {
+    width: 80%;
+    padding: 20px;
+}
+
+.SectionVideo {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#videoHome {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.imagen1servicio {
+    grid-area: imagen1;
+    background-image: url(../images/Desarrollo-Web.jpg);
+    background-position: center;
+}
+
+.imagen2servicio {
+    grid-area: imagen2;
+    background-image: url(../images/Desarrollo-apps.jpg);
+}
+
+.imagen3servicio {
+    grid-area: imagen3;
+    background-image: url(../images/seo.jpeg);
+    background-size: contain;
+}
+
+.imagen4servicio {
+    grid-area: imagen4;
+    background-image: url(../images/wordpress.jpeg);
+    background-size: contain;
+
+}
+
+.tablaServicios {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.bodyHome {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.indexBody {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 0.2fr 1fr 0.1fr 1fr 1fr 1fr 0.2fr;
+    grid-template-areas:
+        "header header header header"
+        "main main main main"
+        "section0 section0 section0 section0"
+        "section1 section1 section1 section1"
+        "section2 section2 section2 section2"
+        "section3 section3 section3 section3"
+        "footer footer footer footer";
+}
+
+
+.videodeHome {
+    width: 100%
+}
+
+#videoHome {
+    width: 80%;
+}
+
+.headerBackgroundmain {
+    background-color: #210B2C;
+    border-bottom: azure 1px solid;
+    grid-area: header;
+    width: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.Section0 {
+    grid-area: section0;
+    width: 80%;
+    padding-top: 50px;
+}
+
+.SectionHome {
+    display: flex;
+    grid-area: section1;
+    width: 80%;
+    padding-top: 50px;
+}
+
+.SectionHome2 {
+    display: flex;
+    grid-area: section2;
+    width: 80%;
+    padding-top: 50px;
+    background-color: #D8B4E2;
+}
+
+.SectionVideo {
+    grid-area: section3;
+    width: 80%;
+    padding-top: 50px;
+}
+
+.footerHome {
+    display: flex;
+    grid-area: footer;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #D8B4E2;
+    padding: 20px;
+    border-top: solid 1px #210B2C;
+}
+
+.logoDiv {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    align-items: center;
+}
+
+.navMenuDiv {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeriaServicios {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, 150px);
+    grid-template-areas:
+        "imagen1 imagen2 imagen2"
+        "imagen1 imagen3 imagen4";
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    padding: 50px 0 50px 0;
+}
+
+@media screen and (max-width: 480px) {
+
+    .indexBody {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 0.2fr 1fr 1fr 1fr 0.5fr;
+        grid-template-areas:
+            "header"
+            "main"
+            "section0"
+            "section1"
+            "section2"
+            "section3"
+            "footer";
+    }
+
+    .mainBackgroundHome {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+    }
+
+    #encabezadoHome {
+        font-size: 20px;
+    }
+
+    .headerBackgroundmain {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logoDiv {
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navMenuDiv {
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menuHome li {
+        list-style-type: none;
+        font-size: 1px;
+
+    }
+
+    .mainDiv1 {
+        margin: 0;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .mainDiv1 p {
+        text-align: center;
+    }
+
+    .mainDiv2 {
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .imagenMain {
+        width: 300px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 5%;
+    }
+
+    .SectionHome {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        padding-top: 10px;
+    }
+
+    .SectionHome2 {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .footerHome {
+        flex-direction: column;
+        gap: 0;
+        margin-top: 0px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    /* media queries de página de Testimonios */
+    .contenedorTotal {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.1fr 0.2fr 1fr 0.5fr 0.2fr;
+        grid-template-areas:
+            "header"
+            "encabezado"
+            "testimonio"
+            "testimonio2"
+            "footer";
+    }
+
+    .headerBackground {
+        width: 100%;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-position: center;
+        align-items: center;
+    }
+
+    .encabezadosTestimonios {
+        flex-direction: column;
+    }
+
+    .encabezadosTestimonios h1 {
+        font-size: 24px;
+    }
+
+    .encabezadosTestimonios h2 {
+        font-size: 20px;
+    }
+
+    .mainTestimonios {
+        flex-direction: column;
+    }
+
+    .testimoniosSecundarios {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: center;
+    }
+
+    .testimoniosecundarioDiv {
+        width: 80%;
+    }
+
+    /* Contacto queries mobile */
+
+    .mainContacto {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .formContacto {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Blog queries mobile */
+
+    .testOverflow {
+        width: 80%;
+        background-color: #D8B4E2;
+        font-size: 16px;
+        border: solid 2px #210B2C;
+        margin: 20px 0 20px 0;
+    }
+
+    .testOverflow2 {
+        width: 80%;
+        margin: 20px 0 20px 0;
+    }
+
+    /* media queries servicios mobile */
+
+    .mainServicios {
+        flex-direction: column;
+        gap: 15px
+        ;
+    }
+
+    .galeriaServicios {
+        display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    grid-template-areas:
+        "imagen1 imagen2"
+        "imagen1 imagen3"
+    ;
+    }
+
+}

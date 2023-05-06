@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -39,9 +39,9 @@ h5 {
 
 h6 {
     font-family: 'Poppins', sans-serif;
-}
+} */
 
-#encabezadoHome {
+/* #encabezadoHome {
     color: azure;
     font-size: 48px;
 }
@@ -49,9 +49,9 @@ h6 {
 .imagenMain {
     border-radius: 10%;
     width: 60%;
-}
+} */
 
-.menu {
+/* .menu {
     width: 100%;
 }
 
@@ -69,13 +69,13 @@ h6 {
     list-style-type: none;
     font-size: 16px;
     padding: 10px;
-}
+} */
 
-.menu a:hover {
+/* .menu a:hover {
     color: #210B2C
-}
+} */
 
-.menuHome {
+/* .menuHome {
     width: 100%;
 }
 
@@ -98,17 +98,17 @@ h6 {
 
 .menuHome a:hover {
     color: #D8B4E2
-}
+} */
 
-.headerBackground {
+/* .headerBackground {
     grid-area: header;
     display: flex;
     background-color: #D8B4E2;
     width: 100%;
     border-bottom: #210B2C 1px solid;
-}
+} */
 
-.mainBackground {
+/* .mainBackground {
     grid-area: main;
     display: flex;
     flex-direction: row;
@@ -116,9 +116,9 @@ h6 {
     background-color: #D8B4E2;
     width: 100%;
     padding: 20px 20px 20px 20px;
-}
+} */
 
-.mainBackgroundHome {
+/* .mainBackgroundHome {
     grid-area: main;
     display: flex;
     flex-direction: row;
@@ -136,34 +136,34 @@ h6 {
     color: #D8B4E2;
     font-weight: 800;
     font-size: 20px;
-}
+} */
 
-.mainDiv1 {
+/* .mainDiv1 {
     display: flex;
     flex-direction: column;
     width: 50%;
     justify-content: center;
     align-items: start;
     margin-left: 150px;
-}
+} */
 
-.mainDiv2 {
+/* .mainDiv2 {
     display: flex;
     width: 50%;
     height: 400px;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.mainBlog {
+/* .mainBlog {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     padding-top: 50px;
-}
+} */
 
-.testOverflow {
+/* .testOverflow {
     width: 50%;
     background-color: #D8B4E2;
     font-size: 16px;
@@ -172,9 +172,9 @@ h6 {
     padding-bottom: 15px;
     border: solid 2px #210B2C;
     margin: 40px 15px 15px 15px;
-}
+} */
 
-.testOverflow2 {
+/* .testOverflow2 {
     width: 50%;
     background-color: #D8B4E2;
     font-size: 16px;
@@ -185,9 +185,9 @@ h6 {
     border-width: 2px;
     border-color: #210B2C;
     margin: 15px;
-}
+} */
 
-footer {
+/* footer {
     display: flex;
     width: 100%;
     height: 100px;
@@ -202,8 +202,9 @@ footer {
 footer p {
     text-align: left;
 }
+ */
 
-.imageBlog1 {
+/* .imageBlog1 {
     margin: 15px;
     width: 300px;
     height: 200px;
@@ -213,9 +214,9 @@ footer p {
     margin: 15px;
     width: 150px;
     height: 100px;
-}
+} */
 
-.parrafoTarjetaBlog {
+/* .parrafoTarjetaBlog {
     margin: 15px;
 }
 
@@ -225,9 +226,9 @@ footer p {
 
 .enlaceTarjetaBlog {
     margin: 15px;
-}
+} */
 
-.mainContacto {
+/* .mainContacto {
     display: flex;
     width: 100%;
     background-color: #D8B4E2;
@@ -235,9 +236,9 @@ footer p {
     height: 750px;
     gap: 50px;
     justify-content: space-evenly;
-}
+} */
 
-.mainServicios {
+/* .mainServicios {
     display: flex;
     width: 100%;
     background-color: #D8B4E2;
@@ -253,9 +254,9 @@ footer p {
 #mainServiciosImg {
     border-radius: 10%;
     width: 60%;
-}
+} */
 
-.mainContacto1 {
+/* .mainContacto1 {
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -284,13 +285,14 @@ footer p {
 .formContacto a {
     color: #D8B4E2;
 }
+ */
 
-#imagenHome1 {
+/*  #imagenHome1 {
     width: 80%;
     padding: 20px;
-}
+} */
 
-.homeDiv3 {
+/* .homeDiv3 {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -302,11 +304,9 @@ footer p {
 .homeDiv3 p {
     width: 50%;
     text-align: center;
-}
+} */
 
-
-
-#imagenHome2 {
+/* #imagenHome2 {
     width: 80%;
     padding: 20px;
 }
@@ -320,15 +320,15 @@ footer p {
 #videoHome {
     text-align: center;
     padding: 20px 0;
-}
+} */
 
-.mainDiv1 p {
+/* .mainDiv1 p {
     width: 50%;
     text-align: left;
     margin-bottom: 10px;
-}
+} */
 
-.contenedorTotal {
+/* .contenedorTotal {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 0.2fr 1fr 2fr 1fr 0.2fr;
@@ -338,17 +338,17 @@ footer p {
         "testimonio testimonio testimonio"
         "testimonio2 testimonio2 testimonio2"
         "footer footer footer";
-}
+} */
 
-.testimoniosHeader {
+/* .testimoniosHeader {
     grid-area: header;
     background-color: #D8B4E2;
     display: flex;
     align-items: center;
     justify-content: center;
-}
+} */
 
-.encabezadosTestimonios {
+/* .encabezadosTestimonios {
     grid-area: encabezado;
     display: flex;
     flex-direction: column;
@@ -367,9 +367,9 @@ footer p {
     font-style: italic;
     font-weight: 00px;
     color: white;
-}
+} */
 
-.mainTestimonios {
+/* .mainTestimonios {
     grid-area: testimonio;
     display: flex;
     padding: 20px;
@@ -414,28 +414,28 @@ footer p {
 .testimoniosSecundarios p {
     color: white;
     padding: 15px;
-}
+} */
 
-.testimonioDiv {
+/* .testimonioDiv {
     display: flex;
     width: 100%;
     padding: 10px;
     justify-items: center;
     align-items: center;
     color: #210B2C;
-}
+} */
 
-.testimonioDiv div {
+/* .testimonioDiv div {
     width: 50%;
-}
+} */
 
-.testimonioDiv img {
+/* .testimonioDiv img {
     width: 80px;
     height: 80px;
     border-radius: 15px;
-}
+} */
 
-.galeriaServicios {
+/* .galeriaServicios {
     display: grid;
     grid-template-columns: repeat(3, 300px);
     grid-template-rows: repeat(2, 150px);
@@ -447,9 +447,9 @@ footer p {
     justify-content: center;
     gap: 15px;
     padding: 50px 0 50px 0;
-}
+} */
 
-.imagen1servicio {
+/* .imagen1servicio {
     grid-area: imagen1;
     background-image: url(../images/Desarrollo-Web.jpg);
     background-position: center;
@@ -480,9 +480,9 @@ footer p {
     align-items: center;
     width: 100%;
     margin-bottom: 100px;
-}
+} */
 
-.bodyHome {
+/* .bodyHome {
     display: flex;
     align-content: center;
     justify-content: center;
@@ -502,10 +502,10 @@ footer p {
         "section2 section2 section2 section2"
         "section3 section3 section3 section3"
         "footer footer footer footer";
-}
+} */
 
 /* Adaptación Index a mobile */
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
 
     .indexBody {
         grid-template-columns: 1fr;
@@ -603,9 +603,9 @@ footer p {
         align-items: center;
         height: auto;
     }
-
-    /* media queries de página de Testimonios */
-    .contenedorTotal {
+ */
+/* media queries de página de Testimonios */
+/* .contenedorTotal {
         grid-template-columns: 1fr;
         grid-template-rows: 0.1fr 0.2fr 1fr 0.5fr 0.2fr;
         grid-template-areas:
@@ -649,11 +649,11 @@ footer p {
 
     .testimoniosecundarioDiv {
         width: 80%;
-    }
+    } */
 
-    /* Contacto queries mobile */
+/* Contacto queries mobile */
 
-    .mainContacto {
+/*    .mainContacto {
         flex-direction: column;
         height: auto;
     }
@@ -661,11 +661,11 @@ footer p {
     .formContacto {
         width: 100%;
         padding: 20px;
-    }
+    } */
 
-    /* Blog queries mobile */
+/* Blog queries mobile */
 
-    .testOverflow {
+/*     .testOverflow {
         width: 80%;
         background-color: #D8B4E2;
         font-size: 16px;
@@ -676,16 +676,16 @@ footer p {
     .testOverflow2 {
         width: 80%;
         margin: 20px 0 20px 0;
-    }
+    } */
 
-    /* media queries servicios mobile */
+/* media queries servicios mobile */
 
-    .mainServicios {
+/*     .mainServicios {
         flex-direction: column;
         gap: 15px
         ;
     }
-
+    
     .galeriaServicios {
         display: grid;
     grid-template-columns: repeat(2, 150px);
@@ -694,10 +694,9 @@ footer p {
         "imagen1 imagen2"
         "imagen1 imagen3"
     ;
-    }
+} */
 
-}
-
+/* 
 .videodeHome {
     width: 100%
 }
@@ -767,4 +766,4 @@ footer p {
     width: 60%;
     justify-content: center;
     align-items: center;
-}
+} */

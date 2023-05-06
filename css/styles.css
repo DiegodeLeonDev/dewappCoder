@@ -1,821 +1,684 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 14px;
-}
-
-h1 {
-    font-family: 'Poppins', sans-serif;
-    color: #210B2C;
-    text-align: center;
-    font-size: 40px;
-}
-
-h2 {
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-}
-
-h3 {
-    font-family: 'Poppins', sans-serif;
-}
-
-h4 {
-    font-family: 'Poppins', sans-serif;
-}
-
-h5 {
-    font-family: 'Poppins', sans-serif;
-}
-
-h6 {
-    font-family: 'Poppins', sans-serif;
-}
-
-#encabezadoHome {
-    color: azure;
-    font-size: 48px;
-}
-
-.imagenMain {
-    border-radius: 10%;
-    width: 60%;
-}
-
+@charset "UTF-8";
+/* Variables */
 .menu {
-    width: 100%;
+  width: 100%;
 }
-
 .menu ul {
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
 }
-
-.menu a {
-    text-decoration: none;
+.menu ul li {
+  list-style-type: none;
+  font-size: 16px;
+  padding: 5px;
 }
-
-.menu li {
-    list-style-type: none;
-    font-size: 16px;
-    padding: 10px;
+.menu ul li a {
+  text-decoration: none;
 }
-.menuHome li a:hover {
-        border-bottom: 2px solid azure;
-}
-
-.menu a:hover {
-    color: #210B2C;
+.menu ul li a:hover {
+  color: #210B2C;
 }
 
 .menuHome {
-    width: 100%;
+  width: 100%;
 }
-
 .menuHome ul {
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
 }
-
-.menuHome a {
-    text-decoration: none;
-    color: azure;
+.menuHome ul li {
+  list-style-type: none;
+  font-size: 16px;
+  padding: 5px;
 }
-
-.menuHome li {
-    list-style-type: none;
-    font-size: 16px;
-    padding: 10px;
+.menuHome ul li a {
+  text-decoration: none;
+  color: azure;
 }
-
-.menuHome a:hover {
-    color: #D8B4E2
+.menuHome ul li a:hover {
+  color: #D8B4E2;
 }
 
 .headerBackground {
-    grid-area: header;
-    display: flex;
-    background-color: #D8B4E2;
-    width: 100%;
-    border-bottom: #210B2C 1px solid;
-}
-
-.mainBackground {
-    grid-area: main;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background-color: #D8B4E2;
-    width: 100%;
-    padding: 20px 20px 20px 20px;
-}
-
-.mainBackgroundHome {
-    grid-area: main;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    background-color: #210B2C;
-    width: 100%;
-    padding: 20px 20px 20px 20px;
-}
-
-.mainBackgroundHome p {
-    color: azure;
-}
-
-.mainBackgroundHome a {
-    color: #D8B4E2;
-    font-weight: 800;
-    font-size: 20px;
-}
-
-.mainDiv1 {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    justify-content: center;
-    align-items: start;
-    margin-left: 150px;
-}
-
-.mainDiv2 {
-    display: flex;
-    width: 50%;
-    height: 400px;
-    align-items: center;
-    justify-content: center;
-}
-
-.mainBlog {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding-top: 50px;
-}
-
-.testOverflow {
-    width: 50%;
-    background-color: #D8B4E2;
-    font-size: 16px;
-    height: 500px;
-    overflow: auto;
-    padding-bottom: 15px;
-    border: solid 2px #210B2C;
-    margin: 40px 15px 15px 15px;
-}
-
-.testOverflow2 {
-    width: 50%;
-    background-color: #D8B4E2;
-    font-size: 16px;
-    height: 250px;
-    overflow: auto;
-    padding-bottom: 15px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #210B2C;
-    margin: 15px;
+  grid-area: header;
+  display: flex;
+  background-color: #D8B4E2;
+  width: 100%;
+  border-bottom: #210B2C 1px solid;
 }
 
 footer {
-    display: flex;
-    width: 100%;
-    height: 100px;
-    background-color: #D8B4E2;
-    padding: 20px;
-    text-align: right;
-    border-top: solid 1px #210B2C;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: #D8B4E2;
+  padding: 20px;
+  text-align: right;
+  border-top: solid 1px #210B2C;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
 footer p {
-    text-align: left;
-}
-
-.imageBlog1 {
-    margin: 15px;
-    width: 300px;
-    height: 200px;
-}
-
-.imageBlog2 {
-    margin: 15px;
-    width: 150px;
-    height: 100px;
-}
-
-.parrafoTarjetaBlog {
-    margin: 15px;
-}
-
-.encabezadoTarjetaBlog {
-    margin: 15px;
-}
-
-.enlaceTarjetaBlog {
-    margin: 15px;
-}
-
-.mainContacto {
-    display: flex;
-    width: 100%;
-    background-color: #D8B4E2;
-    align-items: center;
-    height: 750px;
-    gap: 50px;
-    justify-content: space-evenly;
-}
-
-.mainServicios {
-    display: flex;
-    width: 100%;
-    background-color: #D8B4E2;
-    align-items: center;
-    padding: 20px;
-}
-
-.mainServicios div {
-    width: 100%;
-    flex-direction: column;
-}
-
-#mainServiciosImg {
-    border-radius: 10%;
-    width: 60%;
-}
-
-.mainContacto1 {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    text-align: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.imagenContacto {
-    width: 100px;
-}
-
-.formContacto {
-    width: 40%;
-    text-align: center;
-    background-color: #210B2C;
-    color: white;
-    padding: 50px;
-}
-
-.formContacto label {
-    display: flex;
-    flex-direction: column;
-}
-
-.formContacto a {
-    color: #D8B4E2;
-}
-
-#imagenHome1 {
-    width: 80%;
-    padding: 20px;
-}
-
-.homeDiv3 {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: 400px;
-    justify-content: center;
-    align-items: center;
-}
-
-.homeDiv3 p {
-    width: 50%;
-    text-align: center;
-}
-
-
-
-#imagenHome2 {
-    width: 80%;
-    padding: 20px;
-}
-
-.SectionVideo {
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
-}
-
-#videoHome {
-    text-align: center;
-    padding: 20px 0;
-}
-
-.mainDiv1 p {
-    width: 50%;
-    text-align: left;
-    margin-bottom: 10px;
+  text-align: left;
 }
 
 .contenedorTotal {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.2fr 1fr 2fr 1fr 0.2fr;
-    grid-template-areas:
-        "header header header"
-        "encabezado encabezado encabezado"
-        "testimonio testimonio testimonio"
-        "testimonio2 testimonio2 testimonio2"
-        "footer footer footer";
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.2fr 1fr 2fr 1fr 0.2fr;
+  grid-template-areas: "header header header" "encabezado encabezado encabezado" "testimonio testimonio testimonio" "testimonio2 testimonio2 testimonio2" "footer footer footer";
 }
 
 .testimoniosHeader {
-    grid-area: header;
-    background-color: #D8B4E2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  grid-area: header;
+  background-color: #D8B4E2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .encabezadosTestimonios {
-    grid-area: encabezado;
-    display: flex;
-    flex-direction: column;
-    background-color: #210B2C;
-    align-items: center;
-    justify-content: center;
+  grid-area: encabezado;
+  display: flex;
+  flex-direction: column;
+  background-color: #210B2C;
+  align-items: center;
+  justify-content: center;
 }
-
 .encabezadosTestimonios h1 {
-    font-size: 42px;
-    color: white;
+  font-size: 42px;
+  color: white;
 }
-
 .encabezadosTestimonios h2 {
-    font-size: 24px;
-    font-style: italic;
-    font-weight: 00px;
-    color: white;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 0px;
+  color: white;
 }
 
 .mainTestimonios {
-    grid-area: testimonio;
-    display: flex;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
+  grid-area: testimonio;
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 .boxTestimonios {
-    background-color: #D8B4E2;
-    padding: 20px;
-    margin: 20px;
-    width: 300px;
-    text-align: center;
-    border-radius: 15px;
-    border: 2px solid #210B2C;
+  background-color: #D8B4E2;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  text-align: center;
+  border-radius: 15px;
+  border: 2px solid #210B2C;
 }
 
 .imagenTestimonios {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
 
 .testimoniosSecundarios {
-    grid-area: testimonio2;
-    display: flex;
-    grid-template-columns: repeat(4, 25%);
-    width: 100%;
-    margin-bottom: 25px;
-    justify-items: center;
-    gap: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+  grid-area: testimonio2;
+  display: flex;
+  grid-template-columns: repeat(4, 25%);
+  width: 100%;
+  margin-bottom: 25px;
+  justify-items: center;
+  gap: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.testimoniosSecundarios p {
+  color: white;
+  padding: 15px;
 }
 
 .testimoniosecundarioDiv {
-    width: 60%;
-    background-color: #210B2C;
-    border-radius: 15px;
-}
-
-.testimoniosSecundarios p {
-    color: white;
-    padding: 15px;
+  width: 60%;
+  background-color: #210B2C;
+  border-radius: 15px;
 }
 
 .testimonioDiv {
-    display: flex;
-    width: 100%;
-    padding: 10px;
-    justify-items: center;
-    align-items: center;
-    color: #210B2C;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  justify-items: center;
+  align-items: center;
+  color: #210B2C;
 }
-
 .testimonioDiv div {
-    width: 50%;
+  width: 50%;
 }
-
 .testimonioDiv img {
-    width: 80px;
-    height: 80px;
-    border-radius: 15px;
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
 }
 
-.galeriaServicios {
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    grid-template-rows: repeat(2, 150px);
-    grid-template-areas:
-        "imagen1 imagen2 imagen2"
-        "imagen1 imagen3 imagen4"
-    ;
-    width: 100%;
-    justify-content: center;
-    gap: 15px;
-    padding: 50px 0 50px 0;
+.imageBlog1 {
+  margin: 15px;
+  width: 300px;
+  height: 200px;
 }
 
-.imagen1servicio {
-    grid-area: imagen1;
-    background-image: url(../images/Desarrollo-Web.jpg);
-    background-position: center;
+.imageBlog2 {
+  margin: 15px;
+  width: 150px;
+  height: 100px;
 }
 
-.imagen2servicio {
-    grid-area: imagen2;
-    background-image: url(../images/Desarrollo-apps.jpg);
+.parrafoTarjetaBlog {
+  margin: 15px;
 }
 
-.imagen3servicio {
-    grid-area: imagen3;
-    background-image: url(../images/seo.jpeg);
-    background-size: contain;
+.encabezadoTarjetaBlog {
+  margin: 15px;
 }
 
-.imagen4servicio {
-    grid-area: imagen4;
-    background-image: url(../images/wordpress.jpeg);
-    background-size: contain;
-
+.enlaceTarjetaBlog {
+  margin: 15px;
 }
 
-.tablaServicios {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 100px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.bodyHome {
-    display: flex;
-    align-content: center;
-    justify-content: center;
+html {
+  font-size: 62.5%;
 }
 
-.indexBody {
-    width: 100%;
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 0.2fr 1fr 0.1fr 1fr 1fr 1fr 0.2fr;
-    grid-template-areas:
-        "header header header header"
-        "main main main main"
-        "section0 section0 section0 section0"
-        "section1 section1 section1 section1"
-        "section2 section2 section2 section2"
-        "section3 section3 section3 section3"
-        "footer footer footer footer";
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
 }
 
-/* Adaptación Index a mobile */
-@media screen and (max-width: 480px) {
-
-    .indexBody {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 1fr 0.2fr 1fr 1fr 1fr 0.5fr;
-        grid-template-areas:
-            "header"
-            "main"
-            "section0"
-            "section1"
-            "section2"
-            "section3"
-            "footer";
-    }
-
-    .mainBackgroundHome {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
-        align-content: center;
-    }
-
-    #encabezadoHome {
-        font-size: 20px;
-    }
-
-    .headerBackgroundmain {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logoDiv {
-        width: 50%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .navMenuDiv {
-        width: 50%;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .menuHome li {
-        list-style-type: none;
-        font-size: 15px;
-
-    }
-
-    .mainDiv1 {
-        margin: 0;
-        align-items: center;
-        text-align: center;
-        width: 100%;
-    }
-
-    .mainDiv1 p {
-        text-align: center;
-    }
-
-    .mainDiv2 {
-        height: auto;
-        width: 100%;
-        text-align: center;
-    }
-
-    .imagenMain {
-        width: 300px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        border-radius: 5%;
-    }
-
-    .SectionHome {
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-        padding-top: 10px;
-    }
-
-    .SectionHome2 {
-        flex-direction: column;
-        width: 100%;
-        padding: 10px;
-    }
-
-    .footerHome {
-        flex-direction: column;
-        gap: 0;
-        margin-top: 0px;
-        padding: 0;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-    }
-
-    /* media queries de página de Testimonios */
-    .contenedorTotal {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 0.2fr 1fr 0.5fr 0.2fr;
-        grid-template-areas:
-            "header"
-            "encabezado"
-            "testimonio"
-            "testimonio2"
-            "footer";
-    }
-
-    .headerBackground {
-        width: 100%;
-        flex-direction: column;
-        background-repeat: no-repeat;
-        background-position: center;
-        align-items: center;
-    }
-
-    .encabezadosTestimonios {
-        flex-direction: column;
-    }
-
-    .encabezadosTestimonios h1 {
-        font-size: 24px;
-    }
-
-    .encabezadosTestimonios h2 {
-        font-size: 20px;
-    }
-
-    .mainTestimonios {
-        flex-direction: column;
-    }
-
-    .testimoniosSecundarios {
-        flex-direction: column;
-        padding-left: 20px;
-        padding-right: 20px;
-        align-items: center;
-    }
-
-    .testimoniosecundarioDiv {
-        width: 80%;
-    }
-
-    /* Contacto queries mobile */
-
-    .mainContacto {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .formContacto {
-        width: 100%;
-        padding: 20px;
-    }
-
-    /* Blog queries mobile */
-
-    .testOverflow {
-        width: 80%;
-        background-color: #D8B4E2;
-        font-size: 16px;
-        border: solid 2px #210B2C;
-        margin: 20px 0 20px 0;
-    }
-
-    .testOverflow2 {
-        width: 80%;
-        margin: 20px 0 20px 0;
-    }
-
-    /* media queries servicios mobile */
-
-    .mainServicios {
-        flex-direction: column;
-        gap: 15px
-        ;
-    }
-
-    .galeriaServicios {
-        display: grid;
-    grid-template-columns: repeat(2, 150px);
-    grid-template-rows: repeat(2, 150px);
-    grid-template-areas:
-        "imagen1 imagen2"
-        "imagen1 imagen3"
-    ;
-    }
-
+h1 {
+  font-family: "Poppins", sans-serif;
+  color: #210B2C;
+  text-align: center;
+  font-size: 40px;
 }
 
-.videodeHome {
-    width: 100%
+h2 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
 }
 
-#videoHome {
-    width: 80%;
+h3 {
+  font-family: "Poppins", sans-serif;
 }
 
-.headerBackgroundmain {
-    background-color: #210B2C;
-    border-bottom: azure 1px solid;
-    grid-area: header;
-    width: 100%;
-    display: flex;
-    background-repeat: no-repeat;
-    background-position: center;
+h4 {
+  font-family: "Poppins", sans-serif;
 }
 
-.Section0 {
-    grid-area: section0;
-    width: 80%;
-    padding-top: 50px;
+h5 {
+  font-family: "Poppins", sans-serif;
 }
 
-.SectionHome {
-    display: flex;
-    grid-area: section1;
-    width: 80%;
-    padding-top: 50px;
+h6 {
+  font-family: "Poppins", sans-serif;
 }
 
-.SectionHome2 {
-    display: flex;
-    grid-area: section2;
-    width: 80%;
-    padding-top: 50px;
-    background-color: #D8B4E2;
+.mainBackgroundHome {
+  grid-area: main;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #210B2C;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+}
+.mainBackgroundHome p {
+  color: azure;
+}
+.mainBackgroundHome a {
+  color: #D8B4E2;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.mainDiv1 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: start;
+  margin-left: 150px;
+}
+.mainDiv1 p {
+  width: 50%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#encabezadoHome {
+  color: azure;
+  font-size: 48px;
+}
+
+.imagenMain {
+  border-radius: 10%;
+  width: 60%;
+}
+
+.mainDiv2 {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainBlog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 50px;
+}
+
+.testOverflow {
+  width: 50%;
+  background-color: #D8B4E2;
+  font-size: 16px;
+  height: 500px;
+  overflow: auto;
+  padding-bottom: 15px;
+  border: solid 2px #210B2C;
+  margin: 40px 15px 15px 15px;
+}
+
+.testOverflow2 {
+  width: 50%;
+  background-color: #D8B4E2;
+  font-size: 16px;
+  height: 250px;
+  overflow: auto;
+  padding-bottom: 15px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #210B2C;
+  margin: 15px;
+}
+
+.mainBackground {
+  grid-area: main;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  background-color: #D8B4E2;
+  width: 100%;
+  padding: 20px 20px 20px 20px;
+}
+
+.mainContacto {
+  display: flex;
+  width: 100%;
+  background-color: #D8B4E2;
+  align-items: center;
+  height: 750px;
+  gap: 50px;
+  justify-content: space-evenly;
+}
+
+.mainServicios {
+  display: flex;
+  width: 100%;
+  background-color: #D8B4E2;
+  align-items: center;
+  padding: 20px;
+}
+.mainServicios div {
+  width: 100%;
+  flex-direction: column;
+}
+
+#mainServiciosImg {
+  border-radius: 10%;
+  width: 60%;
+}
+
+.mainContacto1 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  text-align: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.imagenContacto {
+  width: 100px;
+}
+
+.formContacto {
+  width: 40%;
+  text-align: center;
+  background-color: #210B2C;
+  color: white;
+  padding: 50px;
+}
+.formContacto label {
+  display: flex;
+  flex-direction: column;
+}
+.formContacto a {
+  color: #D8B4E2;
+}
+
+#imagenHome1 {
+  width: 80%;
+  padding: 20px;
+}
+
+.homeDiv3 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+.homeDiv3 p {
+  width: 50%;
+  text-align: center;
+}
+
+#imagenHome2 {
+  width: 80%;
+  padding: 20px;
 }
 
 .SectionVideo {
-    grid-area: section3;
-    width: 80%;
-    padding-top: 50px;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#videoHome {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.imagen1servicio {
+  grid-area: imagen1;
+  background-image: url(../images/Desarrollo-Web.jpg);
+  background-position: center;
+}
+
+.imagen2servicio {
+  grid-area: imagen2;
+  background-image: url(../images/Desarrollo-apps.jpg);
+}
+
+.imagen3servicio {
+  grid-area: imagen3;
+  background-image: url(../images/seo.jpeg);
+  background-size: contain;
+}
+
+.imagen4servicio {
+  grid-area: imagen4;
+  background-image: url(../images/wordpress.jpeg);
+  background-size: contain;
+}
+
+.tablaServicios {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.bodyHome {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.indexBody {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 0.2fr 1fr 0.1fr 1fr 1fr 1fr 0.2fr;
+  grid-template-areas: "header header header header" "main main main main" "section0 section0 section0 section0" "section1 section1 section1 section1" "section2 section2 section2 section2" "section3 section3 section3 section3" "footer footer footer footer";
+}
+
+.videodeHome {
+  width: 100%;
+}
+
+#videoHome {
+  width: 80%;
+}
+
+.headerBackgroundmain {
+  background-color: #210B2C;
+  border-bottom: azure 1px solid;
+  grid-area: header;
+  width: 100%;
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Section0 {
+  grid-area: section0;
+  width: 80%;
+  padding-top: 50px;
+}
+
+.SectionHome {
+  display: flex;
+  grid-area: section1;
+  width: 80%;
+  padding-top: 50px;
+}
+
+.SectionHome2 {
+  display: flex;
+  grid-area: section2;
+  width: 80%;
+  padding-top: 50px;
+  background-color: #D8B4E2;
+}
+
+.SectionVideo {
+  grid-area: section3;
+  width: 80%;
+  padding-top: 50px;
 }
 
 .footerHome {
-    display: flex;
-    grid-area: footer;
-    width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #D8B4E2;
-    padding: 20px;
-    border-top: solid 1px #210B2C;
+  display: flex;
+  grid-area: footer;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #D8B4E2;
+  padding: 20px;
+  border-top: solid 1px #210B2C;
 }
 
 .logoDiv {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    align-items: center;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  align-items: center;
 }
 
 .navMenuDiv {
-    display: flex;
-    width: 60%;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
 }
 
-.encabezado {
-    background-color: #D8B4E2;
+.galeriaServicios {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(2, 150px);
+  grid-template-areas: "imagen1 imagen2 imagen2" "imagen1 imagen3 imagen4";
+  width: 100%;
+  justify-content: center;
+  gap: 15px;
+  padding: 50px 0 50px 0;
 }
 
-.sectionServicios {
-    background-color: #D8B4E2;
-}
-
-.serviciosDiv1 {
-    display: flex;
+@media screen and (max-width: 480px) {
+  .indexBody {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 1fr 0.2fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas: "header" "main" "section0" "section1" "section2" "section3" "footer";
+  }
+  .mainBackgroundHome {
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    text-align: center;
-}
-
-.serviciosDiv2 {
-    display: flex;
+    justify-items: center;
+    align-content: center;
+  }
+  #encabezadoHome {
+    font-size: 20px;
+  }
+  .headerBackgroundmain {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logoDiv {
+    width: 50%;
+    align-items: center;
     justify-content: center;
+  }
+  .navMenuDiv {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+  .menuHome li {
+    list-style-type: none;
+    font-size: 1px;
+  }
+  .mainDiv1 {
+    margin: 0;
+    align-items: center;
     text-align: center;
-}
-
-.sectionServicios3{
-    display: flex;
-    flex-direction: row;
+    width: 100%;
+  }
+  .mainDiv1 p {
+    text-align: center;
+  }
+  .mainDiv2 {
+    height: auto;
+    width: 100%;
+    text-align: center;
+  }
+  .imagenMain {
+    width: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5%;
+  }
+  .SectionHome {
+    flex-direction: column;
+    width: 100%;
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-}
-
-.serviciosMenuDiv{
-    display: flex;
-    align-items: center;
-}
-
-.serviciosLogoDiv {
-    display: flex;
+    padding-top: 10px;
+  }
+  .SectionHome2 {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+  .footerHome {
+    flex-direction: column;
+    gap: 0;
+    margin-top: 0px;
+    padding: 0;
     justify-content: center;
     align-items: center;
-}
-
-.footerServicios {
-    display: flex;
+    height: auto;
+  }
+  /* media queries de página de Testimonios */
+  .contenedorTotal {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.2fr 1fr 0.5fr 0.2fr;
+    grid-template-areas: "header" "encabezado" "testimonio" "testimonio2" "footer";
+  }
+  .headerBackground {
+    width: 100%;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+  }
+  .encabezadosTestimonios {
+    flex-direction: column;
+  }
+  .encabezadosTestimonios h1 {
+    font-size: 24px;
+  }
+  .encabezadosTestimonios h2 {
+    font-size: 20px;
+  }
+  .mainTestimonios {
+    flex-direction: column;
+  }
+  .testimoniosSecundarios {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+  }
+  .testimoniosecundarioDiv {
+    width: 80%;
+  }
+  /* Contacto queries mobile */
+  .mainContacto {
     flex-direction: column;
     height: auto;
-    justify-content: space-between;
-    align-content: center;
+  }
+  .formContacto {
+    width: 100%;
+    padding: 20px;
+  }
+  /* Blog queries mobile */
+  .testOverflow {
+    width: 80%;
+    background-color: #D8B4E2;
+    font-size: 16px;
+    border: solid 2px #210B2C;
+    margin: 20px 0 20px 0;
+  }
+  .testOverflow2 {
+    width: 80%;
+    margin: 20px 0 20px 0;
+  }
+  /* media queries servicios mobile */
+  .mainServicios {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .galeriaServicios {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(2, 150px);
+    grid-template-areas: "imagen1 imagen2" "imagen1 imagen3";
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */
