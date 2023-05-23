@@ -19,15 +19,15 @@
 }
 
 .encabezadosTestimonios {
-    grid-area: encabezado;
     display: flex;
     flex-direction: column;
     background-color: #210B2C;
     align-items: center;
     justify-content: center;
+    min-height: 400px;
     h1 {
-        font-size: 42px;
-        color: white;
+        font-size: 48px;
+        color: $colorSecundario;
     }
     h2 {
         font-size: 24px;
@@ -38,7 +38,6 @@
 }
 
 .mainTestimonios {
-    grid-area: testimonio;
     display: flex;
     padding: 20px;
     justify-content: center;
@@ -62,15 +61,12 @@
 }
 
 .testimoniosSecundarios {
-    grid-area: testimonio2;
     display: flex;
-    grid-template-columns: repeat(4, 25%);
     width: 100%;
-    margin-bottom: 25px;
-    justify-items: center;
+    margin-bottom: 50px;
+    justify-content: center;
     gap: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
     p {
         color: white;
         padding: 15px;
@@ -79,9 +75,10 @@
 
 
 .testimoniosecundarioDiv {
-    width: 60%;
+    width: 20%;
     background-color: #210B2C;
     border-radius: 15px;
+    padding: 10px;
 }
 
 .testimonioDiv {
