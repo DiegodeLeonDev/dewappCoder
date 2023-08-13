@@ -1,9 +1,9 @@
-console.log("Bienvenido a los servicios")
+/* console.log("Bienvenido a los servicios")
+ */
+/* alert("Hola, elige el servicio a cotizar")
+let servicioElegido = prompt("Escribe solo uno: Web, App, Wordpress, SEO") */
 
-alert("Hola, elige el servicio a cotizar")
-let servicioElegido = prompt("Escribe solo uno: Web, App, Wordpress, SEO")
-
-while ((((servicioElegido != "Web") && (servicioElegido != "App") && (servicioElegido != "Wordpress") && (servicioElegido != "SEO")))) {
+/* while ((((servicioElegido != "Web") && (servicioElegido != "App") && (servicioElegido != "Wordpress") && (servicioElegido != "SEO")))) {
     switch (servicioElegido) {
         case "Web":
             alert("Has elegido cotizar el servicio de Desarrollo Web"); break;
@@ -43,9 +43,9 @@ function cotizacion() {
             alert("Su cotización estimada del servicio " + servicioElegido + " es de " + suma)
             break;
     }
-}
+} */
 
-cotizacion();
+/* cotizacion();
 
 alert("Si desea que nos comuniquemos para más información, por favor rellena los siguientes datos");
 
@@ -64,7 +64,7 @@ if (aprobacion == "Yes") {
     } else {
         alert ("Actualice la página para comenzar nuevamente ")
     }
-
+ */
 /* if (aprobacion == "Yes") { 
 alert ("Gracias " + nombrePresupuesto + ". Nos estaremos comunicando a la brevedad. Que tengas un buen día"); 
 } else if ((aprobacion == "No") || (aprobacion == "NO")) {
@@ -74,7 +74,7 @@ alert ("Gracias " + nombrePresupuesto + ". Nos estaremos comunicando a la breved
 } */
 
 
-const arrayNombrePresupuesto = ['Mabel', 'Ana']
+/* const arrayNombrePresupuesto = ['Mabel', 'Ana']
 const arrayPersonas = [arrayNombrePresupuesto, servicioElegido, suma]
 arrayNombrePresupuesto.push (Persona1)
 console.log(arrayNombrePresupuesto)
@@ -82,7 +82,7 @@ console.log(arrayPersonas)
 
 const usuario = arrayNombrePresupuesto.find ((el) => el.nombrePresupuesto === "Diego")
 
-console.log (usuario)
+console.log (usuario) */
 
 
 /* function cotizacion() {
@@ -103,4 +103,47 @@ cotizacion(); */
 deseaSeguir() */
 
 
-console.log ("fin del servicio")
+/* console.log ("fin del servicio") */
+
+let botonCalcular =document.getElementById ("btnCalculo")
+botonCalcular.addEventListener("click", respuestaClick)
+function respuestaClick() { 
+    console.log("respuestaEvento")
+}
+
+let desarrolloWeb = document.getElementById ("dWeb")
+desarrolloWeb.addEventListener ("click", WebSeleccion)
+function WebSeleccion () {
+    let parrafo = document.getElementById ("parrafoConfirmacion")
+    parrafo.innerText = "Has elegido presupuestar el servicio de Desarrollo Web"
+}
+
+
+let desarrolloApp = document.getElementById ("dApp")
+desarrolloApp.addEventListener ("click", AppSeleccion)
+function AppSeleccion () {
+    let parrafo = document.getElementById ("parrafoConfirmacion")
+    parrafo.innerText = "Has elegido presupuestar el servicio de Desarrollo App"
+}
+
+let SEO = document.getElementById ("dSEO")
+SEO.addEventListener ("click", SEOSeleccion)
+function SEOSeleccion () {
+    let parrafo = document.getElementById ("parrafoConfirmacion")
+    parrafo.innerText = "Has elegido presupuestar el servicio de SEO"
+}
+
+let Wordpress = document.getElementById ("dWordpress")
+Wordpress.addEventListener ("click", WordpressSeleccion)
+function WordpressSeleccion () {
+    let parrafo = document.getElementById ("parrafoConfirmacion")
+    parrafo.innerText = "Has elegido presupuestar el servicio de Wordpress"
+}
+
+let horas = document.getElementById ("horasCotizadas")
+horas.addEventListener.innerText
+
+
+
+
+

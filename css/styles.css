@@ -822,4 +822,28 @@ h6 {
   }
 }
 
+#ResultadoSimulador {
+  background-color: #210B2C;
+  font-size: 24px;
+}
+
+#sectionSimulador {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+align-items: center;
+justify-items: center;
+align-content: center;
+text-align: center;
+}
+
+#sectionSimulador p {
+  text-align: center;
+}
+
+#sectionSimulador a {
+  color: #210B2C;
+  padding-bottom: 10px;
+}
 /*# sourceMappingURL=styles.css.map */
