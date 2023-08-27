@@ -211,33 +211,34 @@
         <div class="formContacto">
             <form>
                 <label for="servicio">Indique el servicio que necesita:</label>
-                <input id="dWeb" type="radio" name="servicio" value="desarrolloWeb">  Desarrollo Web 
-                <input id="dApp" type="radio" name="servicio" value="desarrolloApp"> Desarrollo de Apps
-                <input id="dSEO" type="radio" name="servicio" value="SEO"> SEO
-                <input id="dWordpress" type="radio" name="servicio" value="Wordpress"> Wordpress
+                <input id="dWeb" class="servicioform" type="radio" name="servicio" value="desarrolloWeb">  Desarrollo Web 
+                <input id="dApp" class="servicioform" type="radio" name="servicio" value="desarrolloApp"> Desarrollo de Apps
+                <input id="dSEO" class="servicioform" type="radio" name="servicio" value="SEO"> SEO
+                <input id="dWordpress" class="servicioform" type="radio" name="servicio" value="Wordpress"> Wordpress
                 <p id="parrafoConfirmacion"></p>
                 <label for="horas">Horas estimadas del proyecto</label>
                 <input id="horasCotizadas" type="number">
+                <button id="btnCalculo" type="button">Calcular</button>
                 <div>
-                    <button id="btnCalculo"> Calcular</button>
                     <p>Su presupuesto estimado es de:</p>
-                    <div id="ResultadoSimulador"></div>
+                    <div id="resultadoSimulador"></div>
                 </div>
                 <h3> ¿Desea que nos comuniquemos para brindarle más información?</h3>
                 <p>Por favor rellena los siguientes campos</p>
                 <label for="name">Nombre:</label>
-                <input type="text" name="nombre" required>
+                <input id="nombreForm" type="text" name="nombre" value="" required>
                 <label for="email">Email</label>
-                <input type="email" name="email" required>
+                <input id="emailForm" type="email" name="email" required>
                 <label for="message">Escríbe tu mensaje</label>
-                <textarea name="message" id="" cols="20" rows="5"
+                <textarea id="mensajeForm" name="message" id="" cols="20" rows="5"
                     placeholder="Escriba su mensaje si lo desea..."></textarea>
                 <legend>Políticas y legales del sitio</legend>
                 <label for="terms">¿Aceptas nuestros <a href="">Términos y condiciones?</a></label>
                 <input type="checkbox" name="terms" value="terminos" required>
                 </fieldset>
-                <input type="submit" value="Enviar">
+                <button id="btnEnviarForm" type="button">Enviar</button>
                 <input type="reset" value="Borrar todo">
+                <div id="arrepentimiento"></div>
             </form>
         </div>
     </section>
