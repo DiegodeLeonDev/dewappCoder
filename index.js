@@ -12,12 +12,14 @@ const ServicioWordpress = new Servicio(4, "Servicio Wordpress", 50, 25)
 
 const serviciosOfrecidos = [DesarrolloWeb, DesarrolloApp, SEO, ServicioWordpress]
 
-function Solicitante(nombre, email, mensaje, Servicio, presupuestoEstimado) {
+function Solicitante(nombre, email, mensaje, Servicio, horasEstimadas, fecha) {
     this.nombre = nombre;
     this.email = email;
     this.mensaje = mensaje;
     this.Servicio = Servicio;
-    this.presupuestoEstimado = presupuestoEstimado;
+    this.horasEstimadas = horasEstimadas;
+    this.fecha = fecha;
+
 }
 
 const solicitantes = []
@@ -90,21 +92,49 @@ btnEnviarForm.addEventListener('click', obtenerDatos)
     solicitantes.push(Solicitante)
 } */
 
+fecha = Date ()
+
 function obtenerDatos() {
-    const lead = new Solicitante(nommm, emmm, mensss, server, input.value)
+    const lead = new Solicitante(nommm, emmm, mensss, server, input.value, fecha)
     console.log(lead);
     solicitantes.push(lead)
     arrepentir = document.getElementById("arrepentimiento")
 arrepentir.innerHTML = "<button id= 'meArrepenti' type='button'>Me arrepentí, quiero eliminar mis datos</button>"
 const borrarDatos = document.getElementById("meArrepenti")
-borrarDatos.addEventListener ("click", borrarData)
+borrarDatos.addEventListener ("click", borrarData);
+const enJSON = JSON.stringify(lead)
+sessionStorage.setItem("lead", enJSON)
+sessionStorage.setItem("nombreLead", lead.nombre)
+nombreUser()
 }
+
+
+
+const nombreUser = () => {
+const lead2 = JSON.parse(sessionStorage.getItem("lead"))
+/* mostrarName = sessionStorage.getItem("nombreLead") */
+mostrarUser = ("Hola " + lead2.nombre)
+mostrarUsuario = document.getElementById("usuarioNombre")
+mostrarUsuario.innerHTML = mostrarUser;
+}
+nombreUser ()
+
 
 function borrarData () {
     solicitantes.pop()
-    arrepentir.innerHTML = "<button type='button'>Listo ¡Ya no tenemos tus datos</button>"
+    arrepentir.innerHTML = "<button type='button'>Listo ¡Ya no tenemos tus datos!</button>"
+    localStorage.removeItem("lead")
 }
 
+
+const resetear = document.getElementById("resetearCache")
+resetear.addEventListener("click", borrarMemoria)
+function borrarMemoria () {
+    sessionStorage.clear();
+    localStorage.clear();
+    const eliminarUsuario = document.getElementById("usuarioNombre")
+    eliminarUsuario.innerHTML = ""
+}
 
 /* alert("Hola, elige el servicio a cotizar")
 let servicioElegido = prompt("Escribe solo uno: Web, App, Wordpress, SEO") */

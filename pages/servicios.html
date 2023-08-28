@@ -209,7 +209,9 @@
         <h2> Simulador de presupuesto</h2>
         <p>Por favor, rellena el siguiente formulario para simular el presupuesto para el servicio deseado</p>
         <div class="formContacto">
+            
             <form>
+                <h3 id="usuarioNombre"></h3>
                 <label for="servicio">Indique el servicio que necesita:</label>
                 <input id="dWeb" class="servicioform" type="radio" name="servicio" value="desarrolloWeb">  Desarrollo Web 
                 <input id="dApp" class="servicioform" type="radio" name="servicio" value="desarrolloApp"> Desarrollo de Apps
@@ -237,7 +239,7 @@
                 <input type="checkbox" name="terms" value="terminos" required>
                 </fieldset>
                 <button id="btnEnviarForm" type="button">Enviar</button>
-                <input type="reset" value="Borrar todo">
+                <button id="resetearCache" type="button">Borrar cache</button>
                 <div id="arrepentimiento"></div>
             </form>
         </div>
