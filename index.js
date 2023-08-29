@@ -1,4 +1,19 @@
+/* API */
+fetch("https://dummyjson.com/comments")
+.then( (resp) => resp.json() )
+.then( (data) => {
+    const review1 = document.getElementById('review1')
+    const review2 = document.getElementById('review2')
+    const review3 = document.getElementById('review3')
+    review1.innerText = "Reseña: " + data.comments[20].body + " " + "Autor: " +data.comments[20].user.username
+    review2.innerText = "Reseña: " + data.comments[2].body + " " + "Autor: " +data.comments[2].user.username
+    review3.innerText = "Reseña: " + data.comments[3].body + " " + "Autor: " +data.comments[3].user.username
+})
+
+
+/* SweetAlert */
 const alertCotizacion = () => { 
+((result.innerText != ("$0")) && (result.innerText != ("")))  && 
 Swal.fire({
     title: "Gracias por cotizar el servicio de " + servicioUser,
     text: "El precio total es de: " + result.innerText,
@@ -15,6 +30,8 @@ const alertFormEnviado = () => {
         confirmButtonText: "Cerrar",
     });
 }
+
+/* Objetos y arrays */
 
 function Servicio(id, nombre, precioBase, horaValue) {
     this.id = id;
@@ -41,6 +58,8 @@ function Solicitante(nombre, email, mensaje, Servicio, horasEstimadas, fecha) {
 }
 
 const solicitantes = []
+
+/* Código para el simulador */
 
 /* document.getElementById('horasCotizadas').value */
 const btnCalculo = document.getElementById('btnCalculo')

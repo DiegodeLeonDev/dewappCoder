@@ -852,4 +852,17 @@ text-align: center;
   background-color: #210B2C; 
   font-size: 24px;
 }
+
+.reseniaApi {
+  background-color: #210B2C;
+  padding: 10px;
+  font-size: 20px;
+  margin: 5px;
+  border: solid #D8B4E2 2px;
+  border-radius: 10px;
+}
+
+.reseniaApi p {
+color: aliceblue;
+}
 /*# sourceMappingURL=styles.css.map */
