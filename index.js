@@ -1,3 +1,21 @@
+const alertCotizacion = () => { 
+Swal.fire({
+    title: "Gracias por cotizar el servicio de " + servicioUser,
+    text: "El precio total es de: " + result.innerText,
+    icon: "success",
+    confirmButtonText: "Completar formulario para asesorarte",
+});
+}
+
+const alertFormEnviado = () => {
+    Swal.fire({
+        title: "Gracias " + nombreU.toUpperCase(),
+        text: "El formulario fue enviado, y nos comunicaremos a la brevedad",
+        icon: "success",
+        confirmButtonText: "Cerrar",
+    });
+}
+
 function Servicio(id, nombre, precioBase, horaValue) {
     this.id = id;
     this.nombre = nombre;
@@ -49,26 +67,27 @@ function valorTotal() {
         valorBase = DesarrolloApp.precioBase
     } else if (document.getElementById("dWordpress").checked)
         valorBase = ServicioWordpress.precioBase;
-    let servis = ("")
+    let servicioU = ("")
     if (document.getElementById('dWeb').checked) {
-        servis = DesarrolloWeb;
+        servicioU = DesarrolloWeb;
     } else if (document.getElementById('dSEO').checked) {
-        servis = SEO;
+        servicioU = SEO;
     } else if (document.getElementById("dApp").checked) {
-        servis = DesarrolloApp;
+        servicioU = DesarrolloApp;
     } else if (document.getElementById("dWordpress").checked)
-        servis = ServicioWordpress;
+        servicioU = ServicioWordpress;
     const presupuesto = input.value * valorHora + valorBase
     result.innerText = "$" + presupuesto;
     result.className = "parrafoSimulador"
-    server = servis.nombre
+    servicioUser = servicioU.nombre
+    alertCotizacion()
 }
 
 const nombreForma = document.getElementById('nombreForm')
 nombreForma.addEventListener("change", getValue)
 function getValue() {
     const value = nombreForm.value
-    nommm = value
+    nombreU = value
 }
 
 
@@ -76,14 +95,14 @@ const emailForm = document.getElementById('emailForm')
 emailForm.addEventListener("change", getEmail)
 function getEmail() {
     const getValue = emailForm.value
-    emmm = getValue
+    emailU = getValue
 }
 
 const mensajeForm = document.getElementById('mensajeForm')
 mensajeForm.addEventListener("change", getMensaje)
 function getMensaje() {
     const getValor = mensajeForm.value
-    mensss = getValor
+    mensajeU = getValor
 }
 
 btnEnviarForm.addEventListener('click', obtenerDatos)
@@ -95,7 +114,7 @@ btnEnviarForm.addEventListener('click', obtenerDatos)
 fecha = Date ()
 
 function obtenerDatos() {
-    const lead = new Solicitante(nommm, emmm, mensss, server, input.value, fecha)
+    const lead = new Solicitante(nombreU, emailU, mensajeU, servicioUser, input.value, fecha)
     console.log(lead);
     solicitantes.push(lead)
     arrepentir = document.getElementById("arrepentimiento")
@@ -103,21 +122,21 @@ arrepentir.innerHTML = "<button id= 'meArrepenti' type='button'>Me arrepentí, q
 const borrarDatos = document.getElementById("meArrepenti")
 borrarDatos.addEventListener ("click", borrarData);
 const enJSON = JSON.stringify(lead)
-sessionStorage.setItem("lead", enJSON)
-sessionStorage.setItem("nombreLead", lead.nombre)
+localStorage.setItem("lead", enJSON)
+localStorage.setItem("nombreLead", lead.nombre)
 nombreUser()
+alertFormEnviado ()
 }
 
-
-
 const nombreUser = () => {
-const lead2 = JSON.parse(sessionStorage.getItem("lead"))
+const lead2 = JSON.parse(localStorage.getItem("lead"))
 /* mostrarName = sessionStorage.getItem("nombreLead") */
 mostrarUser = ("Hola " + lead2.nombre)
 mostrarUsuario = document.getElementById("usuarioNombre")
 mostrarUsuario.innerHTML = mostrarUser;
 }
-nombreUser ()
+
+localStorage.length && nombreUser ()
 
 
 function borrarData () {
